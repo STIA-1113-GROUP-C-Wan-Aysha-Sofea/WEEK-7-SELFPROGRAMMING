@@ -1,0 +1,32 @@
+package selfProgramming;
+import java.util.Scanner;
+public class SentinelLoopExample10 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner input = new Scanner (System.in);
+		
+		System.out.print("Enter and Integer, or -1 to stop : ");
+		int choice = input.nextInt();
+		
+		while(choice != -1) {
+			System.out.println("INSIDE LOOPING");
+			System.out.print("Enter an Integer. or -1 to stop :");
+			choice = input.nextInt();
+			
+		}
+		System.out.println("Sentinel value detected. Good Bye. ");
+	}
+
+}
+
+Output : 
+
+Enter and Integer, or -1 to stop : 2
+INSIDE LOOPING
+Enter an Integer. or -1 to stop :5
+INSIDE LOOPING
+Enter an Integer. or -1 to stop :0
+INSIDE LOOPING
+Enter an Integer. or -1 to stop :-1
+Sentinel value detected. Good Bye. 
